@@ -21,7 +21,7 @@ void desaturate(
       
       double h,s,v = 0;
       rgb_to_hsv(r,g,b,h,s,v);
-      s = s * (1-factor);
+      s = s*(1-factor);
       hsv_to_rgb(h,s,v,r,g,b);
       
       desaturated[3*(col+width*row)] = r;

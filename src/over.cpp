@@ -27,7 +27,7 @@ void over(
       C[4*(col+width*row)] = (unsigned char) (alpha_A * r_A + (1-alpha_A) * r_B);
       C[4*(col+width*row)+1] = (unsigned char) (alpha_A  * g_A + (1-alpha_A) * g_B);
       C[4*(col+width*row)+2] = (unsigned char) (alpha_A  * b_A + (1-alpha_A) * b_B);
-      C[4*(col+width*row)+3] = (unsigned char) (alpha_A * alpha_B);//alpha
+      C[4*(col+width*row)+3] = (unsigned char) (alpha_A + (1-alpha_A) * alpha_B);//alpha
     }
   }
 
